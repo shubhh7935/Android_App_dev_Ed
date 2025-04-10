@@ -5,8 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidapplicationdevelopment.R
-import com.example.androidapplicationdevelopment.Viewsandcomponents
+import com.example.androidapplicationdevelopment.UNITS.Viewsandcomponents
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

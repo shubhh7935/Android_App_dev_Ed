@@ -1,15 +1,18 @@
-package com.example.androidapplicationdevelopment
+package com.example.androidapplicationdevelopment.UNITS
 
+import android.Manifest
 import android.app.*
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.example.androidapplicationdevelopment.MainActivity
 import com.example.androidapplicationdevelopment.MyAlarmReceiver
+import com.example.androidapplicationdevelopment.R
 
 class Communicationandscheduling : AppCompatActivity() {
 
@@ -37,7 +40,7 @@ class Communicationandscheduling : AppCompatActivity() {
         // Implicit Intent (Open Browser)
         btnImplicit.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = android.net.Uri.parse("https://www.google.com")
+            intent.data = Uri.parse("https://www.google.com")
             startActivity(intent)
         }
 
@@ -51,7 +54,7 @@ class Communicationandscheduling : AppCompatActivity() {
                 PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
             )
 
-            val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+            val alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
             val time = System.currentTimeMillis() + 5000 // 5 seconds later
 
             alarmManager.setExact(AlarmManager.RTC_WAKEUP, time, pendingIntent)
@@ -67,8 +70,8 @@ class Communicationandscheduling : AppCompatActivity() {
         // permission to show notifications. Without it, even if your app sends a notification,
         // it won't appear.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(arrayOf(android.Manifest.permission.POST_NOTIFICATIONS), 100)
+            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), 100)
             }
         }
 

@@ -1,4 +1,4 @@
-package com.example.androidapplicationdevelopment
+package com.example.androidapplicationdevelopment.UNITS
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.androidapplicationdevelopment.DynamicFragment
+import com.example.androidapplicationdevelopment.R
 import java.util.*
 
 class Fragmentsandpicker : AppCompatActivity() {

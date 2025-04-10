@@ -23,22 +23,22 @@
             android:exported="true" />
 
         <activity
-            android:name=".Navigations"
+            android:name=".UNITS.Navigations"
             android:exported="false" />
         <activity
-            android:name=".Datastorage"
+            android:name=".UNITS.Datastorage"
             android:exported="false" />
         <activity
-            android:name=".Customviews"
+            android:name=".UNITS.Customviews"
             android:exported="false" />
         <activity
-            android:name=".Fragmentsandpicker"
+            android:name=".UNITS.Fragmentsandpicker"
             android:exported="false" />
         <activity
-            android:name=".Communicationandscheduling"
+            android:name=".UNITS.Communicationandscheduling"
             android:exported="false" />
         <activity
-            android:name=".Viewsandcomponents"
+            android:name=".UNITS.Viewsandcomponents"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

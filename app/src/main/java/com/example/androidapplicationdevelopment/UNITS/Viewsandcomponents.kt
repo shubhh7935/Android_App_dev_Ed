@@ -1,7 +1,6 @@
-package com.example.androidapplicationdevelopment
+package com.example.androidapplicationdevelopment.UNITS
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
